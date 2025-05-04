@@ -1,4 +1,4 @@
-// taget date given as "yyyy-mm-ddThh:mm:ss" via a new Date object
+// taget date given as "yyyy-mm-ddThh:mm:ss" via a new Date object (uses 24 hour clock)
 function countdown(targetDate) {
   targetDate = targetDate.getTime(); // sets date object to epoch time in milliseconds
   // Following is the break down of calculated time intervals
