@@ -43,3 +43,5 @@ function countdown(targetDate) {
 const targetDate = new Date("2025-05-25T17:00:00");
 
 countdown(targetDate);
+
+// export default countdown;

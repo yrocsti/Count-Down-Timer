@@ -44,3 +44,11 @@ const daysLeftInMonth = (date) => {
   const daysTillEndOfMonth = monthData[date.month - 1].days;
   return daysTillEndOfMonth - date.day;
 };
+
+export default {
+  currentYear,
+  checkIfLeapYear,
+  monthData,
+  dayOfTheYear,
+  daysLeftInMonth,
+};
