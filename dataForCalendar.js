@@ -31,18 +31,16 @@ const monthData = [
 const dayOfTheYear = (
   date = { month: new Date().getMonth(), day: new Date().getDate() }
 ) => {
-  const { month, day } = date;
-  const accDays = monthData.slice(0, month);
+  const accDays = monthData.slice(0, date.month);
   const daysSinceJanOne = accDays.reduce(
     (acc, currentValue) => acc + currentValue.days,
     0
   );
-  return daysSinceJanOne + day;
+  return daysSinceJanOne + date.day;
 };
 
 // Days left in month
 const daysLeftInMonth = (date) => {
-  const { month, day } = date;
-  const daysTillEndOfMonth = monthData[month - 1].days;
-  return daysTillEndOfMonth - day;
+  const daysTillEndOfMonth = monthData[date.month - 1].days;
+  return daysTillEndOfMonth - date.day;
 };
