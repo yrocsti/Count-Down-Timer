@@ -1,3 +1,5 @@
+const currentYear = new Date().getFullYear();
+
 // Accepts a year in YYYY format
 const checkIfLeapYear = (year) => {
   /* Return true for leap years false other wise */
