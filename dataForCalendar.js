@@ -1,12 +1,7 @@
 // Accepts a year in YYYY format
 const checkIfLeapYear = (year) => {
-  if (year % 4 === 0 && year % 100 !== 0) {
-    return true;
-  } else if (year % 100 === 0 && year % 400 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  /* Return true for leap years false other wise */
+  return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
 };
 
 // Data array of objects with associated information
